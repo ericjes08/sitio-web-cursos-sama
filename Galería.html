@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de la pestaña-->
+    <title>GALERÍA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/stylegaleria.css">
+</head>
+<body>
+
+    <header>
+        <!--contenedor de pestañas-->
+        <div class="container">
+            <!--Etiqueta de navegación-->
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <!--creación del marco-->
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <!--logo de imagen-->
+                <a href="#" class="logo"><img src="imagenes/sama.png" alt=""></a>
+                <!--Creación de la lista de nav-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="Index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Nos lleva a la pestaña de cursos-->
+                        <a href="Cursos.html" class="nav-link">Cursos</a>
+                    </li>
+                    <!--Nos lleva a la pestaña de galería-->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active ">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Nos lleva a la pestaña de login-->
+                        <a href="login.html" class="nav-link ">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Nos lleva a la pestaña de Niveles-->
+                        <a href="Niveles.html" class="nav-link ">Niveles</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <!--Apartado de pestañas, menu desplegable-->
+     <script>
+
+            
+        const selectElement = function(element) {
+            
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+
+  <!--Encabezado--------------------------------------------------------------------->
+  <body>
+    <div class="galeria">
+        <h1 class="head">GALERÍA</h1>
+        
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="Imagenes/postre5.jpg" alt="">
+                <div class="hover">
+                    
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/postre3.jpg" alt="">
+                <div class="hover">
+                    
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/postre2.jpg" alt="">
+                <div class="hover">
+                    
+                </div>
+            </div>
+            <div class="imagen"><img src="Imagenes/postre1.jpg" alt="">
+                <div class="hover">
+                    
+                </div>
+            </div>
+            <div class="imagen"><img src="Imagenes/fruta.jpg" alt="">
+                <div class="hover">
+                    
+                </div>
+            </div>
+            <div class="imagen"><img src="Imagenes/cake1.jpg" alt="">
+                <div class="hover">
+                    </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/cake2.jpg" alt="">
+                <div class="hover">
+                    </div>
+            </div>
+            <div class="imagen">
+                <img src="Imagenes/comida.jpg" alt="">
+                <div class="hover">
+                      </div>
+            </div>
+            <div class="imagen"><img src="Imagenes/comida1.jpg" alt="">
+                <div class="hover">
+                     </div>
+            </div>
+            <!-- <div class="imagen">
+                <img src="img/1 (2).jpg" alt="">
+            </div> -->
+        </div>
+    </div>
+</body>
+</HTML>
+    
+  
+        
+        
+
+                
+               

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de la pestaña-->
+    <title>INICIAR SESION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/Stylesloging.css">
+</head>
+<body>
+
+    <header>
+        <!--contenedor de pestañas-->
+        <div class="container">
+            <!--Etiqueta de navegación-->
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <!--creación del marco-->
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <!--logo de imagen-->
+                <a href="#" class="logo"><img src="imagenes/sama.png" alt=""></a>
+                <!--Creación de la lista de nav-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="Index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Nos lleva a la pestaña de cursos-->
+                        <a href="Cursos.html" class="nav-link">Cursos</a>
+                    </li>
+                    <!--Nos lleva a la pestaña de galería-->
+                    <li class="nav-item">
+                        <a href="Galería.html" class="nav-link ">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active ">Login</a>
+                    </li>
+                                
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+
+
+
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <div class="login-box">
+            <img src="Imagenes/loginicon.png" alt="">
+            <h1> INICIAR SESIÓN</h1>
+            <form>
+                <!--Username-->
+                <label for="username">CORREO ELECTRONICO</label>
+                <input type="text" placeholder="ingresar correo">
+                <!--Contraseña-->
+                <label for="contraseña">CONTRASEÑA</label>
+                <input type="text" placeholder="ingresar contraseña">
+
+                
+                 <a href="Niveles.html" class="btn cta-btn">Log in</a>
+
+                    
+                
+            </form>
+        </div>
+    </body>
+
+
+    </body>
+</html>
